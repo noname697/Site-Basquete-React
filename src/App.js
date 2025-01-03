@@ -5,7 +5,8 @@ import styled from "styled-components";
 const AppContainer = styled.body`
   height: 100vh;
   width: 100vw;
-  background: red;
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(88,40,0,1) 50%, rgba(0,0,0,1) 100%);
+  );
 `;
 
 function App() {

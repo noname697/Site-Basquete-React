@@ -1,24 +1,24 @@
 import TextosPesquisa from "../TextosPesquisa";
-import InputPesquisa from "../InputPesquisa";
+import AreaTextoPesquisa from "../AreaTextoPesquisa";
 import styled from "styled-components";
 
 const SessaoPesquisaContainer = styled.section`
   width: 100%;
   height: 500px;
-  background: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 2rem;
+  color: #fff;
 `;
 
 function SessaoPesquisa() {
   return (
     <SessaoPesquisaContainer>
       <TextosPesquisa />
-      <InputPesquisa />
+      <AreaTextoPesquisa />
     </SessaoPesquisaContainer>
   );
 }
