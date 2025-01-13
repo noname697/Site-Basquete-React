@@ -7,10 +7,10 @@ import { createGlobalStyle } from "styled-components";
 const GlobalStyled = createGlobalStyle`
   *{
     margin: 0;
+    max-width:100%;
   }
 
   body {
-    background: blue;
     margin: 0;
     padding:0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

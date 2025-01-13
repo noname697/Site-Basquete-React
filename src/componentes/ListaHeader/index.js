@@ -29,8 +29,8 @@ function ListaHeader() {
   return (
     <ListaHeaderContainer>
       <UlContainer>
-        {lista.map((i) => (
-          <LiHeader>{i}</LiHeader>
+        {lista.map((i, index) => (
+          <LiHeader key={index}>{i}</LiHeader>
         ))}
       </UlContainer>
     </ListaHeaderContainer>
