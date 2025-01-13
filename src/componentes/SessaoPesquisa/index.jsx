@@ -33,9 +33,9 @@ function SessaoPesquisa() {
       <InputPesquisa
         placeholder="Digite o nome do jogador aqui."
         onChange={(e) => {
-          const textoDigitado = e.target.value;
+          const textoDigitado = e.target.value.toLowerCase();
           const resultadoPesquisa = dados.filter((jogador) =>
-            jogador.nome.includes(textoDigitado)
+            jogador.nome.toLowerCase().includes(textoDigitado)
           );
           if (textoDigitado === "" || textoDigitado === null) {
             setJogadoresPesquisados([]);
@@ -45,7 +45,6 @@ function SessaoPesquisa() {
         }}
       />
 
-      
       <ResultadoPesquisa>
         {jogadoresPesquisados.map((jogador, i) => (
           <JogadorDiv key={i}>
