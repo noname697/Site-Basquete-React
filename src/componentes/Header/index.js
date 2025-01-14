@@ -7,14 +7,14 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   width: 100%;
   height: 150px;
-  background: black;
+  background: ${(props) => props.corDeFundo || "#000"};
 `;
 
 function Header() {
   return (
-    <HeaderContainer>
+    <HeaderContainer corDeFundo="lightblue">
       <Logo />
-      <ListaHeader />
+      <ListaHeader lista={["Início", "Times", "NBB"]} />
     </HeaderContainer>
   );
 }

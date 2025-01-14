@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const lista = ["Início", "Times", "NBB"];
+
 
 const ListaHeaderContainer = styled.div`
   height: 100%;
@@ -25,11 +25,11 @@ const LiHeader = styled.li`
   }
 `;
 
-function ListaHeader() {
+function ListaHeader(props) {
   return (
     <ListaHeaderContainer>
       <UlContainer>
-        {lista.map((i, index) => (
+        {props.lista.map((i, index) => (
           <LiHeader key={index}>{i}</LiHeader>
         ))}
       </UlContainer>
